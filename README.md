@@ -9,14 +9,16 @@ El propósito de este proyecto es aplicar pruebas exploratorias, funcionales (po
 - `/api/v1/Books`
 - `/api/v1/CoverPhotos`
 - `/api/v1/Users`
+
 Se han creado casos de prueba manuales y su posterior automatización con el objetivo de lograr un buen code coverage y validar el correcto comportamiento de los servicios expuestos.
 ## 🛠️ Stack Tecnológico
 Este proyecto utiliza las siguientes tecnologías y herramientas:
-- **Java 11**
-- **Karate DSL** - Framework de testing basado en BDD.
-- **Maven** - Gestor de dependencias.
-- **Postman** - Cliente para pruebas manuales y manejo de endpoints.
-- **Git** - Control de versiones.
+- **Lenguaje:** Java - Js
+- **Build Tool:** Maven
+- **Cliente:** Postman
+- **Framework de Pruebas:** [Karate DSL](https://github.com/karatelabs/karate)  
+- **Gestión de Bugs:** [Trello](https://trello.com/b/Mu4bezeI/reporte-de-bugs)  
+- **Gestión de Casos de Prueba:** [Qase.io](https://qase.io).
 ## 🧰 Estructura del Proyecto
 
 ```bash
@@ -53,8 +55,11 @@ mvn test
 ```bash
 target/karate-reports/karate-summary.html
 ```
-## ✍️ Colaboradores
-- Samuel Amonzabel Gonzales - git 
-- Jhoselin Teran Susan - git
-- Patricia
-- Roger
+## 👥 Equipo QA Automation and Test Design
+
+| Nombre                      | GitHub                                      |
+|-----------------------------|---------------------------------------------|
+| Samuel Amonzabel Gonzales   | [@zohan22](https://github.com/zohan22)      |
+| Jhose      | [@mferparedes](https://github.com/mferparedes) |
+| Patricia          | [@jlortega](https://github.com/jlortega)    |
+| Roger         | [@analucia-g](https://github.com/analucia-g) |                            |
