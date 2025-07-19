@@ -11,12 +11,15 @@ El propósito de este proyecto es aplicar pruebas exploratorias, funcionales (po
 - `/api/v1/Users`
 
 Se han creado casos de prueba manuales y su posterior automatización con el objetivo de lograr un buen code coverage y validar el correcto comportamiento de los servicios expuestos.
+Toda la Documentacion la pueden encontrar en el siguiente enlace
+**Link:** (https://docs.google.com/document/d/1Dq8VYWct4eY5VPTefG7UnVwqHMzTtfV6UKYgezCTGP4/edit?usp=sharing)
 ## 🛠️ Stack Tecnológico
 Este proyecto utiliza las siguientes tecnologías y herramientas:
 - **Lenguaje:** Java - Js
 - **Build Tool:** Maven
 - **Cliente:** Postman
-- **Framework de Pruebas:** [Karate DSL](https://github.com/karatelabs/karate)  
+- **Framework de Pruebas:** [Karate DSL](https://github.com/karatelabs/karate)
+- **Reportes:** Cucumber
 - **Gestión de Bugs:** [Trello](https://trello.com/b/Mu4bezeI/reporte-de-bugs)  
 - **Gestión de Casos de Prueba:** [Qase.io](https://qase.io).
 ## 🧰 Estructura del Proyecto
@@ -24,13 +27,21 @@ Este proyecto utiliza las siguientes tecnologías y herramientas:
 ```bash
 fakerestapi-testing/
 ├── apitests/
-│   ├── authors/
-│   │   ├── crearAutor.feature
-│   │   ├── eliminarAutor.feature
-│   │   └── obtenerAutor.feature
-│   └── books/
-│       ├── obtenerLibro.feature
-│       └── ...
+│   ├── Authors/
+│   │   ├── obtenerAutorPorId.feature
+│   │   └── obtenerAutores.feature
+│   ├── Books/
+│   │   └── crearLibro.feature
+│   ├── Activities/
+│   │   ├── obtenerActividadPorId.feature
+│   │   └── obtenerActividades.feature
+│   ├── Users/
+│   │   ├── obtenerUsuarioPorId.feature
+│   │   └── obtenerUsuarios.feature
+│   ├── CoverPhotos/
+│   │   ├── obtenerFotoPorId.feature
+│   │   └── obtenerFotos.feature
+│   └── APITest.java
 ├── karate-config.js
 ├── pom.xml
 └── README.md
@@ -51,7 +62,11 @@ mvn clean install
 ```bash
 mvn test
 ```
-### 5. Ver reportes: Luego de ejecutar, se generará un reporte en
+### 5. Ejecuta solo una prueba con Maven
+```bash
+mvn test mvn test -Dkarate.options="classpath:<ruta/al/archivo>.feature"
+```
+### 6. Ver reportes: Luego de ejecutar, se generará un reporte en
 ```bash
 target/karate-reports/karate-summary.html
 ```
@@ -60,6 +75,6 @@ target/karate-reports/karate-summary.html
 | Nombre                      | GitHub                                      |
 |-----------------------------|---------------------------------------------|
 | Samuel Amonzabel Gonzales   | [@zohan22](https://github.com/zohan22)      |
-| Jhose      | [@mferparedes](https://github.com/mferparedes) |
+| Jhose Téran     |   [@sjteranc](https://github.com/sjteranc) |
 | Patricia Rengel Peñaranda   | [@PatriciaRengel](https://github.com/PatriciaRengel)    |
-| Roger         | [@rogerlaura](https://github.com/rogerlaura) |                            |
+| Roger Laura        | [@rogerlaura](https://github.com/rogerlaura) |                            |
