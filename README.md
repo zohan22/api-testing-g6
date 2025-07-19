@@ -12,7 +12,8 @@ El propósito de este proyecto es aplicar pruebas exploratorias, funcionales (po
 
 Se han creado casos de prueba manuales y su posterior automatización con el objetivo de lograr un buen code coverage y validar el correcto comportamiento de los servicios expuestos.
 Toda la Documentacion la pueden encontrar en el siguiente enlace
-**Link:** (https://docs.google.com/document/d/1Dq8VYWct4eY5VPTefG7UnVwqHMzTtfV6UKYgezCTGP4/edit?usp=sharing)
+
+**Link:** https://docs.google.com/document/d/1Dq8VYWct4eY5VPTefG7UnVwqHMzTtfV6UKYgezCTGP4/edit?usp=sharing
 ## 🛠️ Stack Tecnológico
 Este proyecto utiliza las siguientes tecnologías y herramientas:
 - **Lenguaje:** Java - Js
