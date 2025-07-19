@@ -1,0 +1,205 @@
+{
+	"info": {
+		"_postman_id": "110b935b-63e1-474d-855f-e66270179f11",
+		"name": "UsersTesting_Group6.json",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46787417",
+		"_collection_link": "https://g6fakerestapi.postman.co/workspace/Team-Workspace~5a0d9e05-e5f7-42ee-8779-43541d37f6e9/collection/46787417-110b935b-63e1-474d-855f-e66270179f11?action=share&source=collection_link&creator=46787417"
+	},
+	"item": [
+		{
+			"name": "Obtener todos los usuarios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://fakerestapi.azurewebsites.net/api/v1/Users",
+					"protocol": "https",
+					"host": [
+						"fakerestapi",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"v1",
+						"Users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener usuario con ID=1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://fakerestapi.azurewebsites.net/api/v1/Users/1",
+					"protocol": "https",
+					"host": [
+						"fakerestapi",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"v1",
+						"Users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear nuevo usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 0,\r\n  \"userName\": \"JhoseTest\",\r\n  \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fakerestapi.azurewebsites.net/api/v1/Users",
+					"protocol": "https",
+					"host": [
+						"fakerestapi",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"v1",
+						"Users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar usuario ID=1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 1,\r\n  \"userName\": \"UsuarioActualizado\",\r\n  \"password\": \"nuevoPassword\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fakerestapi.azurewebsites.net/api/v1/Users/1",
+					"protocol": "https",
+					"host": [
+						"fakerestapi",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"v1",
+						"Users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar usuario ID=1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fakerestapi.azurewebsites.net/api/v1/Users/1",
+					"protocol": "https",
+					"host": [
+						"fakerestapi",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"v1",
+						"Users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST sin campo \"userName\"",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"password\":\"123\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fakerestapi.azurewebsites.net/api/v1/Users",
+					"protocol": "https",
+					"host": [
+						"fakerestapi",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"v1",
+						"Users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE con ID inexistente",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://fakerestapi.azurewebsites.net/api/v1/Users/9999",
+					"protocol": "https",
+					"host": [
+						"fakerestapi",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"v1",
+						"Users",
+						"9999"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
