@@ -61,5 +61,5 @@ target/karate-reports/karate-summary.html
 |-----------------------------|---------------------------------------------|
 | Samuel Amonzabel Gonzales   | [@zohan22](https://github.com/zohan22)      |
 | Jhose      | [@mferparedes](https://github.com/mferparedes) |
-| Patricia          | [@jlortega](https://github.com/jlortega)    |
+| Patricia Rengel Peñaranda   | [@PatriciaRengel](https://github.com/PatriciaRengel)    |
 | Roger         | [@analucia-g](https://github.com/analucia-g) |                            |
