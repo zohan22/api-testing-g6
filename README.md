@@ -34,14 +34,18 @@ fakerestapi-testing/
 │   ├── Books/
 │   │   └── crearLibro.feature
 │   ├── Activities/
-│   │   ├── obtenerActividadPorId.feature
-│   │   └── obtenerActividades.feature
+│   │   ├── endpoints_DELETE.feature
+│   │   ├── endpoints_GET_all.feature
+│   │   ├── endpoints_GET.feature
+│   │   ├── endpoints_POST.feature
+│   │   └── endpoints_PUT.feature
 │   ├── Users/
 │   │   ├── obtenerUsuarioPorId.feature
 │   │   └── obtenerUsuarios.feature
 │   ├── CoverPhotos/
-│   │   ├── obtenerFotoPorId.feature
-│   │   └── obtenerFotos.feature
+│   │   ├── crearCover.feature
+│   │   ├── crearCover.feature
+│   │   └── obtenerCover.feature
 │   └── APITest.java
 ├── karate-config.js
 ├── pom.xml
