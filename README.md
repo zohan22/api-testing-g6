@@ -73,7 +73,7 @@ mvn test mvn test -Dkarate.options="classpath:<ruta/al/archivo>.feature"
 ```
 ### 6. Ver reportes: Luego de ejecutar, se generará un reporte en
 ```bash
-target/karate-reports/karate-summary.html
+target/cucumber-html-reports/overview-features.html
 ```
 ## 👥 Equipo QA Automation and Test Design
 
