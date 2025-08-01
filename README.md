@@ -1,83 +1,83 @@
 # 🧪 API-TESTING-G6
-Proyecto final del módulo de pruebas de API, este respositorio contiene los casos de prueba, reportes 
-y automatizacion hacia los servicios de `Activities`, `Authors`, `Books`, `CoverPhotos` y `Users`
-expuestos por la [FakeRestAPI](https://fakerestapi.azurewebsites.net/index.html).
-## 📌 Descripción del Proyecto
-El propósito de este proyecto es aplicar pruebas exploratorias, funcionales (positivas y negativas) sobre una API REST, enfocándonos en los endpoints:
+Final project for the API Testing module. This repository contains test cases, bug reports,  
+and automation for the `Activities`, `Authors`, `Books`, `CoverPhotos`, and `Users` services  
+provided by [FakeRestAPI](https://fakerestapi.azurewebsites.net/index.html).
+## 📌 Project Description
+The purpose of this project is to apply exploratory and functional (positive and negative) testing on a REST API, focusing on the following endpoints:
 - `/api/v1/Activities`
 - `/api/v1/Authors`
 - `/api/v1/Books`
 - `/api/v1/CoverPhotos`
 - `/api/v1/Users`
 
-Se han creado casos de prueba manuales y su posterior automatización con el objetivo de lograr un buen code coverage y validar el correcto comportamiento de los servicios expuestos.
-Toda la Documentacion la pueden encontrar en el siguiente enlace
+Manual test cases were created and later automated to achieve high code coverage and validate the correct behavior of the exposed services.  
+All documentation can be found at the following link:
 
 **Link:** [https://docs.google.com/document/d/1Dq8VYWct4eY5VPTefG7UnVwqHMzTtfV6UKYgezCTGP4/edit?usp=sharing](https://docs.google.com/document/d/1sxDK1z4onyDA3dKw8f4bOIez9qzr9P6yss7WavDdK9g/edit?tab=t.0#heading=h.n2s58r2y03vl)
-## 🛠️ Stack Tecnológico
-Este proyecto utiliza las siguientes tecnologías y herramientas:
-- **Lenguaje:** Java - Js
+## 🛠️ Tech Stack
+This project uses the following technologies and tools:
+- **Lenguage:** Java - Js
 - **Build Tool:** Maven
-- **Cliente:** Postman
-- **Framework de Pruebas:** [Karate DSL](https://github.com/karatelabs/karate)
-- **Reportes:** Cucumber
-- **Gestión de Bugs:** [Trello](https://trello.com/b/Mu4bezeI/reporte-de-bugs)  
-- **Gestión de Casos de Prueba:** [Qase.io](https://qase.io).
-## 🧰 Estructura del Proyecto
+- **API Client:** Postman
+- **Testing Framework:** [Karate DSL](https://github.com/karatelabs/karate)
+- **Reports:** Cucumber
+- **Bug Tracking:** [Trello](https://trello.com/b/Mu4bezeI/reporte-de-bugs)  
+- **Test Case Management:** [Qase.io](https://qase.io).
+## 🧰 Project Structure
 
 ```bash
 fakerestapi-testing/
 ├── apitests/
 │   ├── Authors/
-│   │   ├── obtenerAutorPorId.feature
-│   │   └── obtenerAutores.feature
+│   │   ├── getAuthorById.feature
+│   │   └── getAllAuthors.feature
 │   ├── Books/
-│   │   └── crearLibro.feature
+│   │   └── createBook.feature
 │   ├── Activities/
-│   │   ├── endpoints_DELETE.feature
-│   │   ├── endpoints_GET_all.feature
-│   │   ├── endpoints_GET.feature
-│   │   ├── endpoints_POST.feature
-│   │   └── endpoints_PUT.feature
+│   │   ├── deleteEndpoints.feature
+│   │   ├── getAllEndpoints.feature
+│   │   ├── getEndpointById.feature
+│   │   ├── postEndpoint.feature
+│   │   └── putEndpoint.feature
 │   ├── Users/
-│   │   ├── obtenerUsuarioPorId.feature
-│   │   └── obtenerUsuarios.feature
+│   │   ├── getUserById.feature
+│   │   └── getAllUsers.feature
 │   ├── CoverPhotos/
-│   │   ├── crearCover.feature
-│   │   ├── crearCover.feature
-│   │   └── obtenerCover.feature
+│   │   ├── createCover.feature
+│   │   ├── createCover.feature
+│   │   └── getCover.feature
 │   └── APITest.java
 ├── karate-config.js
 ├── pom.xml
 └── README.md
 ```
-## 🚀 Cómo ejecutar las pruebas
+## 🚀 How to Run the Tests
 
-### 1. Instala Java 11 y Maven en tu sistema.
-### 2. Clona el repositorio
+### 1. Install Java 11 and Maven on your system.
+### 2. Clone the repository:
 ```bash
 git clone https://github.com/zohan22/api-testing-g6
 cd api-testing-g6
 ```
-### 3. Instalar las dependendencias
+### 3. Install dependencies
 ```bash
 mvn clean install
 ```
-### 4. Ejecuta las pruebas con Maven
+### 4. Run all tests with Maven
 ```bash
 mvn test
 ```
-### 5. Ejecuta solo una prueba con Maven
+### 5. Run a specific test file with Maven
 ```bash
-mvn test mvn test -Dkarate.options="classpath:<ruta/al/archivo>.feature"
+mvn test mvn test -Dkarate.options="classpath:<path/to/file>>.feature"
 ```
-### 6. Ver reportes: Luego de ejecutar, se generará un reporte en
+### 6. View test reports: After test execution, the reports will be available at:
 ```bash
 target/cucumber-html-reports/overview-features.html
 ```
-## 👥 Equipo QA Automation and Test Design
+## 👥 QA Automation and Test Design Team
 
-| Nombre                      | GitHub                                      |
+| Name                  | GitHub                                      |
 |-----------------------------|---------------------------------------------|
 | Samuel Amonzabel Gonzales   | [@zohan22](https://github.com/zohan22)      |
 | Jhose Téran     |   [@sjteranc](https://github.com/sjteranc) |
