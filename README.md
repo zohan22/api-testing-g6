@@ -13,7 +13,7 @@ The purpose of this project is to apply exploratory and functional (positive and
 Manual test cases were created and later automated to achieve high code coverage and validate the correct behavior of the exposed services.  
 All documentation can be found at the following link:
 
-**Link:** [https://docs.google.com/document/d/1Dq8VYWct4eY5VPTefG7UnVwqHMzTtfV6UKYgezCTGP4/edit?usp=sharing](https://docs.google.com/document/d/1sxDK1z4onyDA3dKw8f4bOIez9qzr9P6yss7WavDdK9g/edit?tab=t.0#heading=h.n2s58r2y03vl)
+**Link:** [https://docs.google.com/document/d/1Dq8VYWct4eY5VPTefG7UnVwqHMzTtfV6UKYgezCTGP4/edit?usp=sharing](https://docs.google.com/document/d/1sxDK1z4onyDA3dKw8f4bOIez9qzr9P6yss7WavDdK9g/edit?usp=sharing)
 ## 🛠️ Tech Stack
 This project uses the following technologies and tools:
 - **Lenguage:** Java - Js
